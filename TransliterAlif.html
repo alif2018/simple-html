@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyboard TransliterAlif</title>
+  <Style>
+  button {
+  width: 45px; 
+  height: 45px; 
+  background-color: #4CAF50;
+  color: white;
+  border: 1px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+  </Style>
+</head>
+<body>
+    <button onclick="kirimHuruf('Ā')">Ā</button>
+    <button onclick="kirimHuruf('ā')">ā</button>
+    <button onclick="kirimHuruf('Ī')">Ī</button>
+    <button onclick="kirimHuruf('ī')">ī</button>
+    <button onclick="kirimHuruf('Ū')">Ū</button>
+    <button onclick="kirimHuruf('ū')">ū</button><br>
+    <button onclick="kirimHuruf('Ḍ')">Ḍ</button>
+    <button onclick="kirimHuruf('ḍ')">ḍ</button>
+    <button onclick="kirimHuruf('Ġ')">Ġ</button>
+    <button onclick="kirimHuruf('ġ')">ġ</button>
+    <button onclick="kirimHuruf('Ḥ')">Ḥ</button>
+    <button onclick="kirimHuruf('ḥ')">ḥ</button><br>
+    <button onclick="kirimHuruf('Ṡ')">Ṡ</button>
+    <button onclick="kirimHuruf('ṡ')">ṡ</button>
+    <button onclick="kirimHuruf('Ṣ')">Ṣ</button>
+    <button onclick="kirimHuruf('ṣ')">ṣ</button>
+    <button onclick="kirimHuruf('Ṭ')">Ṭ</button>
+    <button onclick="kirimHuruf('ṭ')">ṭ</button><br>
+    <button onclick="kirimHuruf('Ż')">Ż</button>
+    <button onclick="kirimHuruf('ż')">ż</button>
+    <button onclick="kirimHuruf('Ẓ')">Ẓ</button>
+    <button onclick="kirimHuruf('ẓ')">ẓ</button>
+    <button onclick="kirimHuruf('‘')">‘</button>
+    <button onclick="kirimHuruf('’')">’</button><br>
+  
+  <span>Created by:
+    Muhammad Alif© 2025</span>
+    <script>
+        function kirimHuruf(huruf) {
+            navigator.clipboard.writeText(huruf);
+            alert("Huruf '" + huruf + "' telah disalin ke clipboard.");
+        }
+    </script>
+</body>
+</html>
